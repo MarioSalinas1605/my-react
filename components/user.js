@@ -1,9 +1,9 @@
-import { Component } from '../lib/react.js'
+import { Component } from '../lib/react/src/React.js'
 
 class User extends Component {
-    render() {
-        const { avatar, name } = this.props
-        return `
+  render() {
+    const { avatar, name } = this.props
+    return `
        <div class="user">
          <div class="avatar">
            <img src="${avatar}" alt=""/>
@@ -11,7 +11,7 @@ class User extends Component {
          <h2>${name}</h2>
        </div>
      `
-    }
+  }
 }
 
 export default User
